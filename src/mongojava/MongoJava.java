@@ -16,6 +16,7 @@ public class MongoJava {
       ConectionMongo con= new ConectionMongo();
       InsertarFiao fiao=new InsertarFiao();
       con.tableFiaos();
+      
       /*fiao.setNombre("migel servantes");
       fiao.setSexo("m");
       fiao.setEdad(30);
@@ -23,8 +24,8 @@ public class MongoJava {
       fiao.guardarFiao(con.tableFiaos());
       fiao.setId(124);
       //fiao.eliminarFiao(con.tableFiaos());*/
-      fiao.modificarFiados(con.tableFiaos());
-      con.allTblFiaos();
+      //fiao.modificarFiados(con.tableFiaos());
+      con.allTblUser();
       
     }
     

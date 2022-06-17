@@ -53,10 +53,23 @@ public class ConectionMongo {
        
     }
     
+    public DBCollection tableUser(){
+        return this.table=dbComerciante().getCollection("user");
+       
+    }
+    
     public void allTblFiaos(){
          DBCursor cursor=tableFiaos().find();
         while (cursor.hasNext()) {
              System.out.println(cursor.next().get("nombre")); 
+        }  
+    }
+    
+     
+    public void allTblUser(){
+         DBCursor cursor=tableUser().find();
+        while (cursor.hasNext()) {
+             System.out.println(cursor.next()); 
         }  
     }
     
